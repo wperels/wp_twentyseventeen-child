@@ -6,7 +6,7 @@
  Author URI:   https://wordpress.org/
  Template:     twentyseventeen
  Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
- Version: 2.4
+ Version: 2.5
  Requires at least: 4.7
  Requires PHP: 5.2.4
  License: GNU General Public License v2 or later
@@ -14,3 +14,12 @@
  Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
  Text Domain:  twentyseventeenchild
 */
+
+/* clear cache in the browser to make changes show up in WP */
+
+body {
+  color:red !important;  
+}
+.entry-content a img, .comment-content a img, .widget a img {
+    box-shadow: 0 0 0 8px #101010;
+}
